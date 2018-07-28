@@ -17,6 +17,10 @@
 		D7949614210C6B4600508EDA /* RunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949612210C6B4600508EDA /* RunnerController.swift */; };
 		D7949616210C74FB00508EDA /* TodoEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949615210C74FB00508EDA /* TodoEditorController.swift */; };
 		D7949617210C74FB00508EDA /* TodoEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949615210C74FB00508EDA /* TodoEditorController.swift */; };
+		D794961A210C75D900508EDA /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949619210C75D900508EDA /* TaskService.swift */; };
+		D794961B210C75D900508EDA /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949619210C75D900508EDA /* TaskService.swift */; };
+		D794961E210C762800508EDA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794961D210C762800508EDA /* Task.swift */; };
+		D794961F210C762800508EDA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794961D210C762800508EDA /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,8 @@
 		D7949606210C32F600508EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7949612210C6B4600508EDA /* RunnerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerController.swift; sourceTree = "<group>"; };
 		D7949615210C74FB00508EDA /* TodoEditorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEditorController.swift; sourceTree = "<group>"; };
+		D7949619210C75D900508EDA /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		D794961D210C762800508EDA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		D79495EE210C32F400508EDA /* TaskRunner */ = {
 			isa = PBXGroup;
 			children = (
+				D794961C210C761100508EDA /* Objects */,
+				D7949618210C75BF00508EDA /* Services */,
 				D79495EF210C32F400508EDA /* AppDelegate.swift */,
 				D7949612210C6B4600508EDA /* RunnerController.swift */,
 				D7949615210C74FB00508EDA /* TodoEditorController.swift */,
@@ -102,6 +110,22 @@
 				D7949606210C32F600508EDA /* Info.plist */,
 			);
 			path = TaskRunnerTests;
+			sourceTree = "<group>";
+		};
+		D7949618210C75BF00508EDA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D7949619210C75D900508EDA /* TaskService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D794961C210C761100508EDA /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D794961D210C762800508EDA /* Task.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7949613210C6B4600508EDA /* RunnerController.swift in Sources */,
+				D794961E210C762800508EDA /* Task.swift in Sources */,
 				D79495F2210C32F400508EDA /* ViewController.swift in Sources */,
 				D7949616210C74FB00508EDA /* TodoEditorController.swift in Sources */,
+				D794961A210C75D900508EDA /* TaskService.swift in Sources */,
 				D79495F0210C32F400508EDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +245,8 @@
 				D7949605210C32F600508EDA /* TaskRunnerTests.swift in Sources */,
 				D7949614210C6B4600508EDA /* RunnerController.swift in Sources */,
 				D7949617210C74FB00508EDA /* TodoEditorController.swift in Sources */,
+				D794961B210C75D900508EDA /* TaskService.swift in Sources */,
+				D794961F210C762800508EDA /* Task.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
