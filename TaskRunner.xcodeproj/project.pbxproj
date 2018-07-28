@@ -13,6 +13,8 @@
 		D79495F7210C32F600508EDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79495F6210C32F600508EDA /* Assets.xcassets */; };
 		D79495FA210C32F600508EDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79495F8210C32F600508EDA /* LaunchScreen.storyboard */; };
 		D7949605210C32F600508EDA /* TaskRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949604210C32F600508EDA /* TaskRunnerTests.swift */; };
+		D7949613210C6B4600508EDA /* RunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949612210C6B4600508EDA /* RunnerController.swift */; };
+		D7949614210C6B4600508EDA /* RunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949612210C6B4600508EDA /* RunnerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		D7949600210C32F600508EDA /* TaskRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7949604210C32F600508EDA /* TaskRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRunnerTests.swift; sourceTree = "<group>"; };
 		D7949606210C32F600508EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7949612210C6B4600508EDA /* RunnerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D79495EF210C32F400508EDA /* AppDelegate.swift */,
+				D7949612210C6B4600508EDA /* RunnerController.swift */,
 				D79495F1210C32F400508EDA /* ViewController.swift */,
 				D79495F3210C32F400508EDA /* Main.storyboard */,
 				D79495F6210C32F600508EDA /* Assets.xcassets */,
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7949613210C6B4600508EDA /* RunnerController.swift in Sources */,
 				D79495F2210C32F400508EDA /* ViewController.swift in Sources */,
 				D79495F0210C32F400508EDA /* AppDelegate.swift in Sources */,
 			);
@@ -207,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7949605210C32F600508EDA /* TaskRunnerTests.swift in Sources */,
+				D7949614210C6B4600508EDA /* RunnerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
