@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="997.60000000000002" y="-632.83358320839591"/>
         </scene>
-        <!--TodoEditor-->
+        <!--TodoDetail-->
         <scene sceneID="SoF-ue-86t">
             <objects>
-                <viewController id="7kF-kp-U8I" userLabel="TodoEditor" sceneMemberID="viewController">
+                <viewController id="7kF-kp-U8I" userLabel="TodoDetail" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ezI-Ix-k83">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="2121" y="-633"/>
         </scene>
-        <!--TodoAppender-->
+        <!--TodoEditor-->
         <scene sceneID="VM0-BW-hbE">
             <objects>
-                <viewController id="DQY-2a-9Uh" userLabel="TodoAppender" sceneMemberID="viewController">
+                <viewController id="DQY-2a-9Uh" userLabel="TodoEditor" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rpe-qd-gu0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,6 +309,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="e8b-DQ-Mk4"/>
+        <segue reference="sUE-at-Vs5"/>
     </inferredMetricsTieBreakers>
 </document>
