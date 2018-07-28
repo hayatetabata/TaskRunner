@@ -125,7 +125,7 @@
         <!--TodoEditor-->
         <scene sceneID="VM0-BW-hbE">
             <objects>
-                <viewController id="DQY-2a-9Uh" userLabel="TodoEditor" sceneMemberID="viewController">
+                <viewController id="DQY-2a-9Uh" userLabel="TodoEditor" customClass="TodoEditorController" customModule="TaskRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rpe-qd-gu0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

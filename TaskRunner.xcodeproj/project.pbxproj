@@ -15,6 +15,8 @@
 		D7949605210C32F600508EDA /* TaskRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949604210C32F600508EDA /* TaskRunnerTests.swift */; };
 		D7949613210C6B4600508EDA /* RunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949612210C6B4600508EDA /* RunnerController.swift */; };
 		D7949614210C6B4600508EDA /* RunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949612210C6B4600508EDA /* RunnerController.swift */; };
+		D7949616210C74FB00508EDA /* TodoEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949615210C74FB00508EDA /* TodoEditorController.swift */; };
+		D7949617210C74FB00508EDA /* TodoEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949615210C74FB00508EDA /* TodoEditorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 		D7949604210C32F600508EDA /* TaskRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRunnerTests.swift; sourceTree = "<group>"; };
 		D7949606210C32F600508EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7949612210C6B4600508EDA /* RunnerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerController.swift; sourceTree = "<group>"; };
+		D7949615210C74FB00508EDA /* TodoEditorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEditorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 			children = (
 				D79495EF210C32F400508EDA /* AppDelegate.swift */,
 				D7949612210C6B4600508EDA /* RunnerController.swift */,
+				D7949615210C74FB00508EDA /* TodoEditorController.swift */,
 				D79495F1210C32F400508EDA /* ViewController.swift */,
 				D79495F3210C32F400508EDA /* Main.storyboard */,
 				D79495F6210C32F600508EDA /* Assets.xcassets */,
@@ -203,6 +207,7 @@
 			files = (
 				D7949613210C6B4600508EDA /* RunnerController.swift in Sources */,
 				D79495F2210C32F400508EDA /* ViewController.swift in Sources */,
+				D7949616210C74FB00508EDA /* TodoEditorController.swift in Sources */,
 				D79495F0210C32F400508EDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +218,7 @@
 			files = (
 				D7949605210C32F600508EDA /* TaskRunnerTests.swift in Sources */,
 				D7949614210C6B4600508EDA /* RunnerController.swift in Sources */,
+				D7949617210C74FB00508EDA /* TodoEditorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
