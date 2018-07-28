@@ -12,11 +12,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet var TableView: UITableView!
     
-    let fruits = ["apple", "orange", "melon", "banana", "pineapple"];
+    var fruits = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        fruits = ["apple", "orange", "melon", "banana", "pineapple"];
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
