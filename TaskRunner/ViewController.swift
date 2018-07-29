@@ -17,14 +17,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        let userDefaults = UserDefaults.standard
-        if ((userDefaults.object(forKey: "test")) != nil) {
-            let taskData: NSData = userDefaults.object(forKey: "test") as! NSData
-            let task: Task = NSKeyedUnarchiver.unarchiveObject(with: taskData as Data) as! Task
-
-            tasks.append(task)
-        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
