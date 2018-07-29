@@ -17,13 +17,15 @@ class TaskService {
         
     }
     
-    func create (attributes: Dictionary) {
-        let task: Task = Task()
+    func create (attributes: Dictionary<String, String>) -> Task {
+        let task: Task = Task(name: attributes["name"]!, deadline: attributes["deadline"])
+
         return task
     }
     
-    func update (task: Task, attributes: Dictionary) {
-        let task: Task = Task()
+    func update (task: Task, attributes: Dictionary<String, String>) -> Task {
+        task.name = (attributes["name"])!
+        task.deadline = attributes["deadline"]
         return task;
     }
     
