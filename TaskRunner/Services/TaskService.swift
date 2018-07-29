@@ -19,7 +19,9 @@ class TaskService {
     
     func create (attributes: Dictionary<String, String>) -> Task {
         let task: Task = Task(name: attributes["name"]!, deadline: attributes["deadline"])
-
+        let userDefaults = UserDefaults.standard
+        let data: NSData = NSKeyedArchiver.archivedData(withRootObject: task) as NSData
+        userDefaults.set(data, forKey: task.name)
         return task
     }
     
