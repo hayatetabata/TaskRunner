@@ -12,23 +12,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet var TableView: UITableView!
     
-    var fruits = [String]()
+    var tasks = [Task]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        fruits = ["apple", "orange", "melon", "banana", "pineapple"];
+        let userDefaults = UserDefaults.standard
+        if ((userDefaults.object(forKey: "test")) != nil) {
+            let taskData: NSData = userDefaults.object(forKey: "test") as! NSData
+            let task: Task = NSKeyedUnarchiver.unarchiveObject(with: taskData as Data) as! Task
+
+            tasks.append(task)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruits.count;
+        return tasks.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "todo", for: indexPath)
         
-        cell.textLabel!.text = fruits[indexPath.row]
+        cell.textLabel!.text = tasks[indexPath.row].name
         
         return cell;
     }
