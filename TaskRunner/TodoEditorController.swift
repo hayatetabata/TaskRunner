@@ -10,6 +10,9 @@ import UIKit
 
 class TodoEditorController: UIViewController {
 
+    @IBOutlet var inputNameField: UITextField!
+    @IBOutlet var inputDeadlineField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,18 @@ class TodoEditorController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func save(_ sender: Any) {
+        let name: String! = inputNameField.text
+        let deadline: String? = inputDeadlineField.text
+        NSLog("Save new task. name: %@", name)
+        let attributes: Dictionary<String, String?> = ["name": name, "deadline": deadline]
+        
+        let service = TaskService();
+        let task: Task = service.create(attributes: attributes as! Dictionary<String, String>)
+        let next = storyboard?.instantiateViewController(withIdentifier: "Todos")
+        self.present(next!, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

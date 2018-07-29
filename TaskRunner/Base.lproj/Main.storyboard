@@ -13,7 +13,7 @@
         <!--Todos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Todos" customClass="ViewController" customModule="TaskRunner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Todos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="Todos" customClass="ViewController" customModule="TaskRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,11 @@
                                                 <segue destination="BYZ-38-t0r" kind="show" id="sUE-at-Vs5"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hiB-Ye-65R"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hiB-Ye-65R">
+                                            <connections>
+                                                <action selector="save:" destination="DQY-2a-9Uh" id="FIQ-j1-CYT"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -176,6 +180,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Gus-1A-seA"/>
                     </view>
+                    <connections>
+                        <outlet property="inputDeadlineField" destination="SN4-YA-JdP" id="g76-sF-axB"/>
+                        <outlet property="inputNameField" destination="7G3-K6-XvT" id="n8L-dl-eWG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CH0-d5-Bmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -309,6 +317,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sUE-at-Vs5"/>
+        <segue reference="e8b-DQ-Mk4"/>
     </inferredMetricsTieBreakers>
 </document>
