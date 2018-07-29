@@ -1,12 +1,12 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.4'
 
 target 'TaskRunner' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for TaskRunner
-  pod 'Realm'
+  pod 'RealmSwift'
 
   target 'TaskRunnerTests' do
     inherit! :search_paths
