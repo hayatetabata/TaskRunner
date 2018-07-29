@@ -36,6 +36,9 @@ class TodoEditorController: UIViewController {
         self.present(next!, animated: true, completion: nil)
     }
     
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -83,11 +83,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="todo" id="J9v-1t-DGM">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="mxd-Vi-clM">
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="e8b-DQ-Mk4"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="mxd-Vi-clM"/>
                                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="sD0-LU-yCl"/>
                                     </navigationItem>
                                 </items>
@@ -165,7 +161,7 @@
                                     <navigationItem title="追加" id="uOp-RA-HTi">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7lX-rK-u2c">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="sUE-at-Vs5"/>
+                                                <action selector="cancel:" destination="DQY-2a-9Uh" id="Ocu-IF-WFa"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="hiB-Ye-65R">
@@ -316,7 +312,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="e8b-DQ-Mk4"/>
-    </inferredMetricsTieBreakers>
 </document>
