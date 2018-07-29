@@ -6,7 +6,7 @@ target 'TaskRunner' do
   use_frameworks!
 
   # Pods for TaskRunner
-  pod 'RealmSwift'
+  pod 'RealmSwift', '3.7.5'
 
   target 'TaskRunnerTests' do
     inherit! :search_paths
