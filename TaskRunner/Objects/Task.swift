@@ -8,8 +8,22 @@
 
 import Foundation
 
-struct Task {
-    let id: Int! = nil
-    var name = ""
-    var deadline: NSDate! = nil
+class Task: NSObject, NSCoding {
+    var name: String = ""
+    var deadline: String! = nil
+    
+    init(name: String, deadline: String!) {
+        self.name = name
+        self.deadline = deadline
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.name = aDecoder.decodeObject(forKey: "name") as! String
+        self.deadline = aDecoder.decodeObject(forKey: "deadline") as! String
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.name, forKey: "name")
+        aCoder.encode(self.deadline, forKey: "deadline")
+    }
 }
