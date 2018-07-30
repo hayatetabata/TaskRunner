@@ -15,6 +15,10 @@ class TaskServiceTest: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
     }
     
     override func tearDown() {
@@ -24,9 +28,10 @@ class TaskServiceTest: XCTestCase {
     
     func testAll() {
         let service = TaskService()
+        let _ = service.create(attributes: ["name": "test", "deadline": "20180909"])
         
         let tasks = service.all()
-        XCTAssertEqual(0, tasks.count)
+        XCTAssertEqual(1, tasks.count)
     }
     
     func testCreate() {
