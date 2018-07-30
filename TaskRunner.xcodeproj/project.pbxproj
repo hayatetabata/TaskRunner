@@ -16,14 +16,10 @@
 		D79495FA210C32F600508EDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79495F8210C32F600508EDA /* LaunchScreen.storyboard */; };
 		D7949605210C32F600508EDA /* TaskRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949604210C32F600508EDA /* TaskRunnerTests.swift */; };
 		D7949613210C6B4600508EDA /* RunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949612210C6B4600508EDA /* RunnerController.swift */; };
-		D7949614210C6B4600508EDA /* RunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949612210C6B4600508EDA /* RunnerController.swift */; };
 		D7949616210C74FB00508EDA /* TodoEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949615210C74FB00508EDA /* TodoEditorController.swift */; };
-		D7949617210C74FB00508EDA /* TodoEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949615210C74FB00508EDA /* TodoEditorController.swift */; };
-		D794961A210C75D900508EDA /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949619210C75D900508EDA /* TaskService.swift */; };
-		D794961B210C75D900508EDA /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949619210C75D900508EDA /* TaskService.swift */; };
 		D794961E210C762800508EDA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794961D210C762800508EDA /* Task.swift */; };
-		D794961F210C762800508EDA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794961D210C762800508EDA /* Task.swift */; };
 		D7949622210D858500508EDA /* TaskServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949621210D858500508EDA /* TaskServiceTest.swift */; };
+		D7949623210F41E000508EDA /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949619210C75D900508EDA /* TaskService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -334,11 +330,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7949623210F41E000508EDA /* TaskService.swift in Sources */,
 				D7949613210C6B4600508EDA /* RunnerController.swift in Sources */,
 				D794961E210C762800508EDA /* Task.swift in Sources */,
 				D79495F2210C32F400508EDA /* ViewController.swift in Sources */,
 				D7949616210C74FB00508EDA /* TodoEditorController.swift in Sources */,
-				D794961A210C75D900508EDA /* TaskService.swift in Sources */,
 				D79495F0210C32F400508EDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,11 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7949605210C32F600508EDA /* TaskRunnerTests.swift in Sources */,
-				D7949614210C6B4600508EDA /* RunnerController.swift in Sources */,
 				D7949622210D858500508EDA /* TaskServiceTest.swift in Sources */,
-				D7949617210C74FB00508EDA /* TodoEditorController.swift in Sources */,
-				D794961B210C75D900508EDA /* TaskService.swift in Sources */,
-				D794961F210C762800508EDA /* Task.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

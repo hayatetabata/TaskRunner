@@ -7,7 +7,8 @@
 //
 
 import XCTest
-
+@testable import TaskRunner
+@testable import RealmSwift
 
 class TaskServiceTest: XCTestCase {
     
@@ -23,19 +24,17 @@ class TaskServiceTest: XCTestCase {
     
     func testAll() {
         let service = TaskService()
-        let attributes: Dictionary<String, String> = ["name": "test", "deadline": "20180909"]
-        service.create(attributes: attributes)
         
         let tasks = service.all()
-        XCTAssertEqual(1, tasks.count)
+        XCTAssertEqual(0, tasks.count)
     }
     
     func testCreate() {
         let service = TaskService()
         let attributes: Dictionary<String, String> = ["name": "test", "deadline": "20180909"]
-        let task = service.create(attributes: attributes)
-        XCTAssertEqual(task.name, attributes["name"])
-        XCTAssertEqual(task.deadline, attributes["deadline"])
+        let result = service.create(attributes: attributes)
+        XCTAssertEqual(result.name, attributes["name"])
+        XCTAssertEqual(result.deadline, attributes["deadline"])
     }
     
     func testPerformanceExample() {
