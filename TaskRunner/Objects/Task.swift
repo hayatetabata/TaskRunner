@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class Task: Object {
+public class Task: Object {
     @objc dynamic var id: Int = 0
     @objc dynamic var name: String = ""
     @objc dynamic var deadline: String! = nil
