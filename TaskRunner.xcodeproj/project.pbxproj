@@ -20,6 +20,7 @@
 		D794961E210C762800508EDA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794961D210C762800508EDA /* Task.swift */; };
 		D7949622210D858500508EDA /* TaskServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949621210D858500508EDA /* TaskServiceTest.swift */; };
 		D7949623210F41E000508EDA /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7949619210C75D900508EDA /* TaskService.swift */; };
+		D79D2144212B04400049C022 /* TodoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79D2143212B04400049C022 /* TodoDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D7949619210C75D900508EDA /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
 		D794961D210C762800508EDA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		D7949621210D858500508EDA /* TaskServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskServiceTest.swift; sourceTree = "<group>"; };
+		D79D2143212B04400049C022 /* TodoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailController.swift; sourceTree = "<group>"; };
 		DB0B5891ECFD1A98B0F038B6 /* Pods-TaskRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskRunner.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskRunner/Pods-TaskRunner.release.xcconfig"; sourceTree = "<group>"; };
 		E3D3F494394983A5D2638D7A /* Pods_TaskRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9585A343A2259C6A93736FF /* Pods_TaskRunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskRunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				D794961C210C761100508EDA /* Objects */,
 				D7949618210C75BF00508EDA /* Services */,
 				D79495EF210C32F400508EDA /* AppDelegate.swift */,
+				D79D2143212B04400049C022 /* TodoDetailController.swift */,
 				D7949612210C6B4600508EDA /* RunnerController.swift */,
 				D7949615210C74FB00508EDA /* TodoEditorController.swift */,
 				D79495F1210C32F400508EDA /* ViewController.swift */,
@@ -330,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79D2144212B04400049C022 /* TodoDetailController.swift in Sources */,
 				D7949623210F41E000508EDA /* TaskService.swift in Sources */,
 				D7949613210C6B4600508EDA /* RunnerController.swift in Sources */,
 				D794961E210C762800508EDA /* Task.swift in Sources */,
