@@ -44,7 +44,7 @@
                                     <navigationItem title="Todos" id="8J9-mw-N87">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="K0k-mm-a1w">
                                             <connections>
-                                                <segue destination="DQY-2a-9Uh" kind="show" id="6rV-87-bmJ"/>
+                                                <segue destination="DQY-2a-9Uh" kind="show" identifier="" id="6rV-87-bmJ"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -57,6 +57,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="Sps-eR-tdp" userLabel="Todos"/>
                     <connections>
                         <outlet property="TableView" destination="TwS-oF-cuH" id="rUJ-0Q-qUQ"/>
+                        <segue destination="7kF-kp-U8I" kind="showDetail" identifier="TodoDetail" id="ctm-NU-5ZU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,7 +67,7 @@
         <!--TodoDetail-->
         <scene sceneID="SoF-ue-86t">
             <objects>
-                <viewController id="7kF-kp-U8I" userLabel="TodoDetail" sceneMemberID="viewController">
+                <viewController id="7kF-kp-U8I" userLabel="TodoDetail" customClass="TodoDetailController" customModule="TaskRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ezI-Ix-k83">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +84,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="todo" id="J9v-1t-DGM">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="mxd-Vi-clM"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="mxd-Vi-clM">
+                                            <connections>
+                                                <action selector="back:" destination="7kF-kp-U8I" id="eo6-a0-BR5"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="sD0-LU-yCl"/>
                                     </navigationItem>
                                 </items>
@@ -121,7 +126,7 @@
         <!--TodoEditor-->
         <scene sceneID="VM0-BW-hbE">
             <objects>
-                <viewController id="DQY-2a-9Uh" userLabel="TodoEditor" customClass="TodoEditorController" customModule="TaskRunner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TodoEditor" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DQY-2a-9Uh" userLabel="TodoEditor" customClass="TodoEditorController" customModule="TaskRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rpe-qd-gu0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,6 +302,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2bO-i5-IPQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mpz-7B-M0x">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

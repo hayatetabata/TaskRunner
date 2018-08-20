@@ -7,19 +7,31 @@
 //
 
 import Foundation
+import RealmSwift
 
 class TaskService {
-    func search () {
-        
+    func all() -> Results<Task> {
+        let realm = try! Realm()
+        let tasks = realm.objects(Task.self)
+        return tasks;
     }
     
     func findOrFail (taskId: Int) {
-        
+
     }
     
     func create (attributes: Dictionary<String, String>) -> Task {
-        let task: Task = Task(name: attributes["name"]!, deadline: attributes["deadline"])
-
+        let task: Task = Task()
+        task.name = attributes["name"]!
+        task.deadline = attributes["deadline"]
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.add(task)
+            }
+        } catch {
+            NSLog("Realm Error")
+        }
         return task
     }
     

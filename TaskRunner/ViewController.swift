@@ -7,30 +7,39 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var TableView: UITableView!
     
-    var fruits = [String]()
+    var tasks: Results<Task>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        fruits = ["apple", "orange", "melon", "banana", "pineapple"];
+        let service = TaskService()
+        tasks = service.all()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.TableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruits.count;
+        return tasks.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "todo", for: indexPath)
         
-        cell.textLabel!.text = fruits[indexPath.row]
+        cell.textLabel!.text = tasks[indexPath.row].name
         
         return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "TodoDetail", sender: nil)
     }
     
     override func didReceiveMemoryWarning() {
