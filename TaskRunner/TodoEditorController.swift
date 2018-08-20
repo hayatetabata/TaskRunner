@@ -31,10 +31,9 @@ class TodoEditorController: UIViewController {
         let attributes: Dictionary<String, String?> = ["name": name, "deadline": deadline]
         
         let service = TaskService();
-        service.create(attributes: attributes as! Dictionary<String, String>)
-        let nextView = storyboard?.instantiateViewController(withIdentifier: "Todos")
-        let nextNavigationView = UINavigationController(rootViewController: nextView!)
-        self.present(nextNavigationView, animated: true, completion: nil)
+        let _: Task = service.create(attributes: attributes as! Dictionary<String, String>)
+        let next = storyboard?.instantiateViewController(withIdentifier: "Todos")
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {

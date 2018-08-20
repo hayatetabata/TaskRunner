@@ -22,6 +22,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tasks = service.all()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.TableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count;
     }
